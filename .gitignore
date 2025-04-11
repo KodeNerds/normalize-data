@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.env
+venv/
+.env.*
+.DS_Store
+node_modules/
+static/normalized_products.csv
