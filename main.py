@@ -36,3 +36,8 @@ async def normalize(files: list[UploadFile] = File(...)):
         shutil.copy(output_path, static_path)
 
         return JSONResponse({"downloadUrl": "/static/normalized_products.csv"})
+    
+@app.get("/")
+def health_check():
+    return {"status": "ok"}
+
